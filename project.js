@@ -3,7 +3,7 @@ const fs = require('fs')
 const port = 8080
 
 const server = http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/html'})//if was on plain will be seen as text file
+    res.writeHead(200, {'Content-Type': 'text/html'})
     fs.readFile('project.html', function(error, data){
         if(error){
             res.writeHead(404)
