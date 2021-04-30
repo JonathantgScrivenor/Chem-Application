@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <h1>Welcome to Our Chemistry Helper!</h1>
+  <h2>Please Login to Continue</h2>
+  <style>
+    body{background: black; font-family: verdana; color: gold; padding: 30px;}
+    h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+    h2{font-size: 40px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+    div{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+</style>
+</head>
+<body>
+
+    <div class="n_log_in">
+        <input type="text" id="userName" placeholder="Username..." /><br>
+        <input type="password" id ="Password" placeholder="Password..." /><br>
+        <input id="Login" type="button" value="Login" onclick="window.location.href = '/api/login'"/>
+        <input id="Register" type="button" value="Register" onclick="window.location.href = '/api/register'"/>
+      </div>
+      
+      <div class="log_in" style="display: none;">
+        text
+      </div>
+</body>
+</html>
